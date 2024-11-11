@@ -1,0 +1,331 @@
+:root {
+  --pink-color: rgb(255, 0, 106);
+}
+* {
+  font-family: "Roboto", serif;
+}
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+header {
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: none;
+}
+
+.burger {
+  color: grey;
+}
+h3 {
+  color: var(--pink-color);
+}
+h1 {
+  font-weight: 900;
+}
+p {
+  color: grey;
+}
+
+section {
+  margin-left: 1rem;
+}
+
+/*Sign Up Page*/
+.sign-up-page {
+  padding-bottom: 5rem;
+  overflow: hidden;
+  position: relative;
+  max-width: 100vw;
+}
+.sign-up-page,
+.sign-up-page-lady {
+  width: 100%;
+  display: flex;
+}
+.lft-clmn {
+  width: 50%;
+  flex-wrap: wrap;
+}
+.pink-robot-img {
+  position: absolute;
+  height: 350px;
+  right: -150px;
+  top: -10%;
+}
+button {
+  width: 150px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 3px solid;
+  border-radius: 50px;
+  background-color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  border-top-color: #ffa500;
+  border-bottom-color: #ffa500;
+  border-left-color: #ff69b4;
+  border-right-color: #8fbc8f;
+}
+
+/*Free NFT*/
+
+.free-nft {
+  background: linear-gradient(45deg, #ff69b4, #ffa500, #8fbc8f);
+  padding: 3rem 1rem 1rem 1rem;
+  margin: 0;
+}
+.black-font {
+  color: black;
+}
+
+/*NFT Auctions*/
+.brands-grid-container {
+  max-width: 550px;
+}
+.brands-grid-container,
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2rem 0rem 2rem 0rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.box1-grid,
+.box2-grid,
+.box3-grid,
+.box4-grid {
+  width: 50%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+.box1-grid,
+#footer-box1 {
+  grid-column: 1;
+  grid-row: 1;
+  overflow: hidden;
+}
+.box2-grid,
+#footer-box2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.box3-grid,
+#footer-box3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.box4-grid,
+#footer-box4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.box5-grid {
+  display: none;
+}
+.auction-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.card {
+  display: grid;
+  width: 100%;
+  min-width: 300px;
+  border-radius: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(228, 221, 221);
+  margin-left: 1rem;
+}
+.top-bid,
+.price,
+.time-left {
+  display: flex;
+  justify-content: right;
+  padding-right: 1rem;
+}
+.nft-img {
+  width: 100%;
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.series {
+  color: orange;
+  font-size: 12px;
+}
+.series,
+.nft-name,
+.card-number {
+  padding-left: 1rem;
+}
+.nft-name,
+.price {
+  font-size: 16px;
+  color: black;
+}
+.card-number,
+.time-left {
+  font-size: 16px;
+}
+.top-bid {
+  font-size: 12px;
+}
+
+/*Sign Up page lady */
+.sign-up-page-lady {
+  padding-top: 3rem;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  border-top: 1px solid rgb(228, 220, 220);
+  border-bottom: 1px solid rgb(228, 220, 220);
+}
+.green-lady {
+  transform: translateX(4rem);
+}
+/* Footer*/
+footer {
+  padding: 3rem 0rem 2rem 1rem;
+}
+.media-logo {
+  color: grey;
+  margin-right: 0.7rem;
+}
+footer p,
+footer h5,
+footer a {
+  font-size: 23px;
+}
+h5 {
+  color: grey;
+}
+
+.copyright-desktop-par {
+  display: none;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.footer-link {
+  color: grey;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 1rem 2rem 1rem 2rem;
+    width: auto;
+  }
+
+  /* Header*/
+
+  .burger {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+  nav a {
+    padding-left: 0.5rem;
+    text-decoration: none;
+    color: grey;
+  }
+  .pink-nav-btn {
+    color: var(--pink-color);
+  }
+
+  /* Sign Up page*/
+
+  .sign-up-page {
+    display: flex;
+  }
+  .lft-clmn {
+    max-width: 40%;
+  }
+  .lft-clmn h1 {
+    font-size: 45px;
+  }
+  .lft-clmn p {
+    margin-bottom: 2rem;
+  }
+  .pink-robot-img {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-height: 500px;
+  }
+
+  /*Free NFT*/
+
+  .free-nft {
+    margin: auto;
+    width: auto;
+    border-radius: 15px;
+    padding: 4rem 2rem 2rem 2rem;
+  }
+
+  /* NFT Auctions*/
+
+  .brands-grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: none;
+    margin: 4rem 0 2rem 0;
+  }
+  .box1-grid,
+  .box2-grid,
+  .box3-grid,
+  .box4-grid,
+  .box5-grid {
+    display: flex;
+    width: auto;
+  }
+  .auction-cards {
+    width: 100%;
+    max-width: 100vw;
+    gap: 15px;
+  }
+  .card {
+    min-width: auto;
+    height: auto;
+  }
+  /* Footer*/
+  .logo-and-media {
+    justify-content: left;
+    align-items: center;
+  }
+  .footer-grid-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .copyright-desktop-par {
+    display: inline;
+  }
+}
